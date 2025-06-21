@@ -12,6 +12,7 @@ cc_library_shared {
         "-fno-inline",
         "-fno-short-enums",
         "-D_ANDROID_",
+        "-D_SM8050_",
     ],
 
     local_include_dirs: [
