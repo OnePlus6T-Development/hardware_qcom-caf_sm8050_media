@@ -57,6 +57,10 @@ ifeq ($(call is-board-platform-in-list, sdm845),true)
 libmm-vdec-def += -DVENUS_USES_LEGACY_MISR_INFO
 endif
 
+ifeq ($(call is-board-platform-in-list, sm8050),true)
+libmm-vdec-def += -DVENUS_USES_LEGACY_MISR_INFO
+endif
+
 include $(CLEAR_VARS)
 
 # Common Includes
